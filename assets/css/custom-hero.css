@@ -1,0 +1,347 @@
+/* =====================================================================
+   HEALTHY CHEST & SLEEP CLINIC — HERO + CTA ENHANCEMENTS
+   Additive overrides. Loaded after main.css so it wins the cascade.
+   ===================================================================== */
+
+/* ---------- HERO: backdrop, ambient glow, subtle pattern ---------- */
+.hero4-section-area {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.hero4-section-area::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(55% 65% at 18% 35%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 60%),
+    radial-gradient(45% 55% at 85% 70%, rgba(148, 137, 252, 0.35) 0%, rgba(148, 137, 252, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero4-section-area > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------- HERO: subtitle refinement ---------- */
+.hero4-section-area .hero-header h5 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(2, 1, 90, 0.08);
+  border-radius: 999px;
+  color: #02015A;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  box-shadow: 0 6px 18px rgba(2, 1, 90, 0.08);
+  margin-bottom: 0;
+}
+
+.hero4-section-area .hero-header h5 span {
+  color: rgba(2, 1, 90, 0.35);
+}
+
+/* ---------- HERO: headline + body tightening ---------- */
+.hero4-section-area .hero-header h1 {
+  line-height: 1.08;
+  letter-spacing: -0.5px;
+}
+
+.hero4-section-area .hero-header p {
+  color: #2b2a5a;
+  font-size: 17px;
+  line-height: 1.65;
+  max-width: 560px;
+}
+
+/* ---------- HERO: credential chips ---------- */
+.hero-trust-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-trust-chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: #ffffff;
+  border: 1px solid rgba(2, 1, 90, 0.1);
+  border-radius: 999px;
+  color: #02015A;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(2, 1, 90, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero-trust-chips li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(2, 1, 90, 0.12);
+}
+
+.hero-trust-chips li svg {
+  flex: 0 0 auto;
+  color: #4416FF;
+}
+
+/* ---------- HERO: dual CTA (primary + call) ---------- */
+.hero4-section-area .btn-area1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+
+.hero4-section-area .btn-area1 .hero-call-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #02015A;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 6px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.hero4-section-area .btn-area1 .hero-call-link:hover {
+  border-bottom-color: #4416FF;
+  color: #4416FF;
+}
+
+.hero4-section-area .btn-area1 .hero-call-link .phone-ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ECE8FF 0%, #D9D5FD 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(68, 22, 255, 0.18);
+}
+
+.hero4-section-area .btn-area1 .hero-call-link small {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  color: #6b6b8a;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.hero4-section-area .btn-area1 .hero-call-link strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ---------- HERO: image halo + floating stat cards ---------- */
+.hero4-section-area .hero4-images-area {
+  position: relative;
+  padding-top: 10px;
+}
+
+.hero4-section-area .hero4-images-area::before {
+  content: "";
+  position: absolute;
+  width: 560px;
+  height: 560px;
+  max-width: 90%;
+  max-height: 90%;
+  right: -40px;
+  top: 30px;
+  background: radial-gradient(circle at center, rgba(148, 137, 252, 0.55) 0%, rgba(255, 255, 255, 0) 65%);
+  filter: blur(10px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero4-section-area .hero4-images-area::after {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  max-width: 75%;
+  max-height: 75%;
+  right: 20px;
+  bottom: 10%;
+  border-radius: 50%;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(236, 232, 255, 0.5) 100%);
+  box-shadow: inset 0 0 60px rgba(148, 137, 252, 0.25);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero4-section-area .hero4-images-area .img1 img {
+  position: relative;
+  z-index: 1;
+  filter: drop-shadow(0 25px 40px rgba(2, 1, 90, 0.25));
+}
+
+.hero-float-card {
+  position: absolute;
+  z-index: 3;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 14px 18px;
+  box-shadow: 0 18px 40px rgba(2, 1, 90, 0.16);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 170px;
+  animation: heroFloatY 5s ease-in-out infinite;
+}
+
+.hero-float-card.card-top {
+  top: 10%;
+  left: -10px;
+  animation-delay: 0.4s;
+}
+
+.hero-float-card.card-bottom {
+  bottom: 12%;
+  right: -10px;
+  animation-delay: 0s;
+}
+
+.hero-float-card .hfc-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4416FF 0%, #7a56ff 100%);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  box-shadow: 0 8px 18px rgba(68, 22, 255, 0.3);
+}
+
+.hero-float-card .hfc-text {
+  line-height: 1.2;
+}
+
+.hero-float-card .hfc-text strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 800;
+  color: #02015A;
+}
+
+.hero-float-card .hfc-text span {
+  display: block;
+  font-size: 12px;
+  color: #6b6b8a;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+@keyframes heroFloatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Hide floating cards on smaller screens so they don't overlap the image awkwardly */
+@media (max-width: 991px) {
+  .hero-float-card { display: none; }
+  .hero4-section-area .hero4-images-area::after { display: none; }
+}
+
+/* ---------- CTA SECTION: reframe image, soften backdrop ---------- */
+.cta4-section-area {
+  position: relative;
+}
+
+.cta4-section-area::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(60% 70% at 80% 30%, rgba(148, 137, 252, 0.35) 0%, rgba(148, 137, 252, 0) 70%),
+    radial-gradient(50% 60% at 15% 80%, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cta4-section-area > .container { position: relative; z-index: 2; }
+
+.cta-visual-area {
+  position: relative;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(2, 1, 90, 0.22);
+  aspect-ratio: 4 / 5;
+  max-width: 420px;
+  margin: 0 0 0 auto;
+}
+
+.cta-visual-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.8s ease;
+}
+
+.cta-visual-area:hover img { transform: scale(1.04); }
+
+.cta-visual-area::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(2, 1, 90, 0) 45%, rgba(2, 1, 90, 0.55) 100%);
+  pointer-events: none;
+}
+
+.cta-visual-badge {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 14px;
+}
+
+.cta-visual-badge .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4ade80;
+  box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.25);
+  animation: pulseDot 1.8s ease-in-out infinite;
+}
+
+.cta-visual-badge span {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@keyframes pulseDot {
+  0%, 100% { box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.25); }
+  50% { box-shadow: 0 0 0 10px rgba(74, 222, 128, 0); }
+}
+
+@media (max-width: 991px) {
+  .cta-visual-area { margin: 40px auto 0; }
+}

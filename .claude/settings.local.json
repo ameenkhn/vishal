@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(file pro-*.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1600&q=80\" -o /Users/ameenkhan/Downloads/vishal_temp/img/pro-hero-doctor.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1200&q=80\" -o /Users/ameenkhan/Downloads/vishal_temp/img/pro-works1.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1551076805-e1869033e561?w=1200&q=80\" -o /Users/ameenkhan/Downloads/vishal_temp/img/pro-works2.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1666214280557-f1b5022eb634?w=1200&q=80\" -o /Users/ameenkhan/Downloads/vishal_temp/img/pro-works3.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1200&q=80\" -o /Users/ameenkhan/Downloads/vishal_temp/img/pro-works4.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?w=1400&q=85\" -o pro-cta.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1579684453423-f84349ef60b0?w=1600&q=85\" -o pro-cta-alt.jpg)",
+      "Bash(curl -sL \"https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?w=1400&q=85\" -o pro-hero-accent.jpg)",
+      "Bash(python3)",
+      "Read(//private/tmp/**)"
+    ]
+  }
+}
