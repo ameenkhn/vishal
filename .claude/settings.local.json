@@ -11,7 +11,20 @@
       "Bash(curl -sL \"https://images.unsplash.com/photo-1579684453423-f84349ef60b0?w=1600&q=85\" -o pro-cta-alt.jpg)",
       "Bash(curl -sL \"https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?w=1400&q=85\" -o pro-hero-accent.jpg)",
       "Bash(python3)",
-      "Read(//private/tmp/**)"
+      "Read(//private/tmp/**)",
+      "WebFetch(domain:doc-0k-0k-docstext.googleusercontent.com)",
+      "Bash(curl -sL \"https://docs.google.com/document/d/1rvuk9HScVf017BGsUyEIyconrm2-e3W1POTvSNUWBIc/export?format=txt\" -o /tmp/vishal_doc.txt)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(grep -nE 'article id=|class=\"btn btn-ghost\"|class=\"btn btn-primary\">Book consultation|</ul>$' General-Services.html)",
+      "Bash(curl -sL -A \"Mozilla/5.0\" \"https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&fm=jpg\" -o /tmp/imgtest/unsplash1.jpg)",
+      "Bash(echo \"exit:$?  size:$\\(wc -c < /tmp/imgtest/unsplash1.jpg 2>/dev/null\\) type:$\\(file -b /tmp/imgtest/unsplash1.jpg 2>/dev/null\\)\")",
+      "Bash(curl -sL -A \"Mozilla/5.0\" \"https://images.pexels.com/photos/263402/pexels-photo-263402.jpeg?auto=compress&w=1200\" -o /tmp/imgtest/pexels1.jpg)",
+      "Bash(echo \"exit:$?  size:$\\(wc -c < /tmp/imgtest/pexels1.jpg 2>/dev/null\\) type:$\\(file -b /tmp/imgtest/pexels1.jpg 2>/dev/null\\)\")",
+      "WebFetch(domain:www.pexels.com)",
+      "Bash(python3 -c \"import PIL; print\\('PIL', PIL.__version__\\)\")",
+      "Bash(python3 -c \"from PIL import Image; print\\('Image OK'\\)\")",
+      "Bash(break)",
+      "Bash(md5 -q img/svc-*.jpg img/cta-*.jpg img/gs-*.jpg img/clinic-diagnostic.jpg)"
     ]
   }
 }
