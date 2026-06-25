@@ -23,27 +23,72 @@
 <!-- ============== PRELOADER ============== -->
 <div class="preloader" aria-hidden="true">
   <div class="pulse-wrap">
-    <div class="pulse-core">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.081 20c1.18 0 1.842-.842 1.842-2.18v-7.428c0-1.337-.661-2.18-1.842-2.18-1.18 0-1.842.843-1.842 2.18v7.428C4.239 19.158 4.9 20 6.081 20Zm11.838 0c1.18 0 1.842-.842 1.842-2.18v-7.428c0-1.337-.662-2.18-1.842-2.18-1.18 0-1.842.843-1.842 2.18v7.428c0 1.338.661 2.18 1.842 2.18ZM12 22c1.18 0 1.842-.842 1.842-2.18V4.18C13.842 2.842 13.18 2 12 2c-1.18 0-1.842.842-1.842 2.18v15.64C10.158 21.158 10.82 22 12 22Z"/></svg>
-    </div>
+    <img src="img/logo-removebg-preview (1).png" alt="Healthy Chest &amp; Sleep Clinic" class="pre-logo">
   </div>
-  <div class="label">Healthy Chest &amp; Sleep Clinic <small>Breathe Easier · Sleep Better</small></div>
+  <div class="label"><small>Breathe Easier · Sleep Better</small></div>
 </div>
 <!-- ============== HEADER / NAV ============== -->
 <header class="site-header">
   <div class="container nav-row">
     <a href="index.html" class="brand">
       <img src="img/logo-removebg-preview (1).png" alt="Healthy Chest & Sleep Clinic">
-      <span class="b-text">
-        <strong>Healthy Chest &amp; Sleep</strong>
-        <span>Pulmonology · Sleep Medicine</span>
-      </span>
     </a>
 
     <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="General-Services.html">Services</a>
+      <div class="nav-item has-mega">
+        <a href="General-Services.html" class="mega-trigger">Services</a>
+        <div class="mega" role="menu" aria-label="Services">
+          <div class="mega-inner">
+            <div class="mega-cols">
+              <div class="mega-col">
+                <span class="mega-head"><i class="fa-solid fa-lungs"></i> Respiratory Conditions</span>
+                <a href="asthma.html">Asthma</a>
+                <a href="copd.html">COPD</a>
+                <a href="bronchiectasis.html">Bronchiectasis</a>
+                <a href="chronic-cough.html">Chronic Cough</a>
+                <a href="ild.html">Interstitial Lung Disease</a>
+                <a href="pulmonary-hypertension.html">Pulmonary Hypertension</a>
+              </div>
+              <div class="mega-col">
+                <span class="mega-head"><i class="fa-solid fa-virus-covid"></i> Infections &amp; Allergy</span>
+                <a href="pneumonia.html">Pneumonia</a>
+                <a href="lung-infections.html">Lung Infections</a>
+                <a href="tuberculosis.html">Tuberculosis</a>
+                <a href="lung-cancer.html">Lung Cancer</a>
+                <a href="allergic-rhinitis.html">Allergic Rhinitis</a>
+                <a href="respiratory-allergy.html">Respiratory Allergy</a>
+              </div>
+              <div class="mega-col">
+                <span class="mega-head"><i class="fa-solid fa-moon"></i> Sleep &amp; Diagnostics</span>
+                <a href="sleep-apnoea.html">Sleep Apnoea</a>
+                <a href="sleep-study-level2.html">Sleep Study Level I / II</a>
+                <a href="sleep-study-level3.html">Sleep Study Level III</a>
+                <a href="feno.html">FeNO Test</a>
+                <a href="pleural-effusion.html">Pleural Effusion</a>
+              </div>
+              <div class="mega-col">
+                <span class="mega-head"><i class="fa-solid fa-stethoscope"></i> Procedures &amp; Care</span>
+                <a href="bronchoscopy.html">Bronchoscopy</a>
+                <a href="pleuroscopy.html">Thoracoscopy</a>
+                <a href="ebus.html">EBUS / Biopsy</a>
+                <a href="airway-stenting.html">Airway Stenting</a>
+                <a href="smoking-cessation.html">Smoking Cessation</a>
+                <a href="vaccination.html">Adult Vaccination</a>
+              </div>
+            </div>
+            <a href="General-Services.html" class="mega-feature">
+              <span class="mega-feature-eyebrow"><span class="dot"></span> All Services</span>
+              <strong>Not sure where to start?</strong>
+              <span class="mega-feature-text">Explore every diagnostic, treatment &amp; long-term care service we offer.</span>
+              <span class="mega-feature-cta">View all services
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
       <a href="Gallery.html">Gallery</a>
       <a href="testimonial.html">Testimonials</a>
       <a href="contact.html">Contact</a>
@@ -72,7 +117,39 @@
   <nav>
     <a href="index.html">Home <i class="fa-solid fa-arrow-right"></i></a>
     <a href="about.html">About Us <i class="fa-solid fa-arrow-right"></i></a>
-    <a href="General-Services.html">Services <i class="fa-solid fa-arrow-right"></i></a>
+    <div class="drawer-acc">
+      <button class="drawer-acc-toggle" aria-expanded="false">Services <i class="fa-solid fa-chevron-down"></i></button>
+      <div class="drawer-acc-panel">
+        <a href="General-Services.html" class="drawer-acc-all">View all services</a>
+        <span class="drawer-acc-head">Respiratory Conditions</span>
+        <a href="asthma.html">Asthma</a>
+        <a href="copd.html">COPD</a>
+        <a href="bronchiectasis.html">Bronchiectasis</a>
+        <a href="chronic-cough.html">Chronic Cough</a>
+        <a href="ild.html">Interstitial Lung Disease</a>
+        <a href="pulmonary-hypertension.html">Pulmonary Hypertension</a>
+        <span class="drawer-acc-head">Infections &amp; Allergy</span>
+        <a href="pneumonia.html">Pneumonia</a>
+        <a href="lung-infections.html">Lung Infections</a>
+        <a href="tuberculosis.html">Tuberculosis</a>
+        <a href="lung-cancer.html">Lung Cancer</a>
+        <a href="allergic-rhinitis.html">Allergic Rhinitis</a>
+        <a href="respiratory-allergy.html">Respiratory Allergy</a>
+        <span class="drawer-acc-head">Sleep &amp; Diagnostics</span>
+        <a href="sleep-apnoea.html">Sleep Apnoea</a>
+        <a href="sleep-study-level2.html">Sleep Study Level I / II</a>
+        <a href="sleep-study-level3.html">Sleep Study Level III</a>
+        <a href="feno.html">FeNO Test</a>
+        <a href="pleural-effusion.html">Pleural Effusion</a>
+        <span class="drawer-acc-head">Procedures &amp; Care</span>
+        <a href="bronchoscopy.html">Bronchoscopy</a>
+        <a href="pleuroscopy.html">Thoracoscopy</a>
+        <a href="ebus.html">EBUS / Biopsy</a>
+        <a href="airway-stenting.html">Airway Stenting</a>
+        <a href="smoking-cessation.html">Smoking Cessation</a>
+        <a href="vaccination.html">Adult Vaccination</a>
+      </div>
+    </div>
     <a href="Gallery.html">Gallery <i class="fa-solid fa-arrow-right"></i></a>
     <a href="testimonial.html">Testimonials <i class="fa-solid fa-arrow-right"></i></a>
     <a href="contact.html">Contact <i class="fa-solid fa-arrow-right"></i></a>
@@ -98,11 +175,13 @@
       <span class="eyebrow reveal"><span class="dot"></span> Specialist Pulmonology &amp; Sleep Care · Chandigarh</span>
       <h1 class="reveal" data-delay="1">Breathe Easier. <span class="accent">Sleep Better.</span></h1>
       <p class="lede reveal" data-delay="2">Internationally trained, evidence-based care for breathing and sleep disorders — built around accurate diagnosis, advanced diagnostics and a patient-first approach.</p>
+    </div>
 
+    <div class="hero-cta">
       <ul class="hero-trust reveal" data-delay="3">
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>MRCP — United Kingdom</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>EDRM — Switzerland</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>10+ Years Clinical Experience</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>15+ Years Clinical Experience</li>
       </ul>
 
       <div class="hero-actions reveal" data-delay="4">
@@ -120,21 +199,6 @@
     <div class="hero-visual reveal" data-delay="2">
       <div class="blob"></div>
       <div class="grid-dot"></div>
-
-      <div class="float-card fc-1">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z"/></svg></span>
-        <span class="txt"><strong>500+</strong><span>Patients monthly</span></span>
-      </div>
-
-      <div class="float-card fc-2 alt">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
-        <span class="txt"><strong>95%</strong><span>Patient satisfaction</span></span>
-      </div>
-
-      <div class="float-card fc-3 warm">
-        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
-        <span class="txt"><strong>Same-week</strong><span>Appointments</span></span>
-      </div>
 
       <div class="doctor">
         <img src="img/IMG_4457-removebg-preview.png" alt="Dr. Vishal Sharma — Consultant Pulmonologist & Sleep Specialist">
@@ -228,52 +292,66 @@
 <section class="section">
   <div class="container">
     <div class="section-head reveal">
-      <span class="eyebrow"><span class="dot"></span> Our Services</span>
-      <h2>A higher standard of respiratory &amp; sleep care.</h2>
-      <p class="lede">From breathlessness and chronic cough to disturbed sleep — our team brings together the right people, technology and protocols for every diagnosis.</p>
+      <span class="eyebrow"><span class="dot"></span> Services we offer</span>
+      <h2>Diagnostic procedures &amp; interventions.</h2>
+      <p class="lede">A complete in-house suite of pulmonary diagnostics and interventional procedures — so most of your assessment and treatment happens under one roof.</p>
     </div>
 
     <div class="bento">
-      <a href="General-Services.html" class="bento-card span-3 tall feature reveal" style="background-image:linear-gradient(180deg, rgba(8,22,58,0) 30%, rgba(8,22,58,.85)),url('img/pro-expertise.jpg');">
-        <span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg></span>
-        <h3>Specialist Pulmonology Consultation</h3>
-        <p>Comprehensive evaluation and management for asthma, COPD, ILD, post-tuberculosis lung disease, chronic cough and other complex respiratory conditions.</p>
+      <a href="General-Services.html" class="bento-card span-3 tall feature reveal" style="background-image:linear-gradient(180deg, rgba(8,22,58,0) 30%, rgba(8,22,58,.85)),url('img/svc-feno.jpg');">
+        <span class="ico"><i class="fa-solid fa-lungs"></i></span>
+        <h3>PFT Lab</h3>
+        <p>Complete lung-function assessment — Spirometry (PFT), FeNO, DLCO (diffusion capacity) and FOT (Forced Oscillation Technique).</p>
         <span class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
 
       <div class="bento-card span-3 reveal" data-delay="1">
-        <span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg></span>
-        <h3>Sleep Studies (Polysomnography)</h3>
-        <p>In-clinic and home sleep tests for OSA, insomnia, REM sleep disorders and more.</p>
-        <a href="General-Services.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <span class="ico"><i class="fa-solid fa-moon"></i></span>
+        <h3>Sleep Studies</h3>
+        <p>Level I/II in-lab polysomnography and Level III home sleep tests for OSA, snoring and other sleep disorders.</p>
+        <a href="sleep-study-level2.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
 
       <div class="bento-card span-3 reveal" data-delay="2">
-        <span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h6l3-9 4 18 3-9h2"/></svg></span>
-        <h3>Pulmonary Function Testing</h3>
-        <p>Spirometry, lung volumes, diffusion capacity, bronchodilator reversibility and FeNO testing.</p>
-        <a href="General-Services.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <span class="ico"><i class="fa-solid fa-stethoscope"></i></span>
+        <h3>Bronchoscopy</h3>
+        <p>Flexible &amp; rigid bronchoscopy with BAL, TBNA, biopsy and foreign-body removal.</p>
+        <a href="bronchoscopy.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
 
       <div class="bento-card span-2 reveal" data-delay="3">
-        <span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 0a4 4 0 1 1-4 4"/><circle cx="12" cy="16" r="2"/></svg></span>
-        <h3>Asthma &amp; Allergy Care</h3>
-        <p>Personalised inhaler plans, biologics &amp; allergen testing.</p>
-        <a href="asthma.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <span class="ico"><i class="fa-solid fa-lungs-virus"></i></span>
+        <h3>Thoracoscopy</h3>
+        <p>Medical pleuroscopy for diagnosis &amp; treatment of pleural disease.</p>
+        <a href="pleuroscopy.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
 
       <div class="bento-card span-2 reveal" data-delay="4">
-        <span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></span>
-        <h3>COPD Management</h3>
-        <p>Long-term plans, rehab and home-oxygen optimisation.</p>
-        <a href="copd.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <span class="ico"><i class="fa-solid fa-wave-square"></i></span>
+        <h3>Endobronchial Ultrasound</h3>
+        <p>Radial &amp; convex-probe EBUS for mediastinal &amp; lung lesions.</p>
+        <a href="ebus.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
 
       <div class="bento-card span-2 reveal" data-delay="5">
-        <span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/></svg></span>
-        <h3>Smoking Cessation</h3>
-        <p>Structured programmes &amp; pharmacological support.</p>
+        <span class="ico"><i class="fa-solid fa-droplet"></i></span>
+        <h3>Allergy Testing</h3>
+        <p>Skin-prick &amp; specific-IgE testing for respiratory allergy.</p>
+        <a href="respiratory-allergy.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="bento-card span-3 reveal">
+        <span class="ico"><i class="fa-solid fa-smoking"></i></span>
+        <h3>Smoking Cessation Clinic</h3>
+        <p>Structured programmes &amp; pharmacological support to help you quit for good.</p>
         <a href="smoking-cessation.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="bento-card span-3 reveal" data-delay="1">
+        <span class="ico"><i class="fa-solid fa-syringe"></i></span>
+        <h3>Vaccinations</h3>
+        <p>Influenza, pneumococcal &amp; other adult respiratory vaccinations.</p>
+        <a href="vaccination.html" class="read">Learn more <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
@@ -299,8 +377,8 @@
       <a href="sleep-apnoea.html" class="condition-card reveal"><div class="ico a"><i class="fa-solid fa-moon"></i></div><div><h4>Insomnia &amp; Snoring</h4><p>Behavioural &amp; medical therapy</p></div></a>
       <a href="pulmonary-hypertension.html" class="condition-card reveal" data-delay="1"><div class="ico i"><i class="fa-solid fa-heart-pulse"></i></div><div><h4>Pulmonary Hypertension</h4><p>Specialist diagnosis &amp; care</p></div></a>
       <a href="ild.html" class="condition-card reveal" data-delay="2"><div class="ico"><i class="fa-solid fa-dna"></i></div><div><h4>Interstitial Lung Disease</h4><p>HRCT-guided assessment</p></div></a>
-      <a href="smoking-cessation.html" class="condition-card reveal" data-delay="3"><div class="ico r"><i class="fa-solid fa-smoking"></i></div><div><h4>Smoking Cessation</h4><p>Structured pharmacotherapy</p></div></a>
-      <a href="vaccination.html" class="condition-card reveal"><div class="ico a"><i class="fa-solid fa-syringe"></i></div><div><h4>Adult Vaccination</h4><p>Flu, pneumococcal &amp; COVID</p></div></a>
+      <a href="lung-cancer.html" class="condition-card reveal" data-delay="3"><div class="ico r"><i class="fa-solid fa-disease"></i></div><div><h4>Lung Cancer</h4><p>Diagnosis, staging &amp; care pathway</p></div></a>
+      <a href="bronchiectasis.html" class="condition-card reveal"><div class="ico a"><i class="fa-solid fa-lungs"></i></div><div><h4>Bronchiectasis</h4><p>Airway clearance &amp; infection control</p></div></a>
     </div>
   </div>
 </section>
@@ -310,9 +388,9 @@
   <div class="container doctor-spot">
     <div class="doctor-frame reveal">
       <span class="ribbon">Lead Consultant</span>
-      <img src="img/IMG_3967.jpg" alt="Dr. Vishal Sharma">
+      <img src="img/IMG_3967-portrait.jpg" alt="Dr. Vishal Sharma">
       <div class="stamp">
-        <strong>10+</strong>
+        <strong>15+</strong>
         <span>Years of practice</span>
       </div>
     </div>
@@ -333,7 +411,7 @@
         </div>
         <div class="cred-pill">
           <span class="ico"><i class="fa-solid fa-user-doctor"></i></span>
-          <div><strong>MD Internal Medicine</strong><span>Specialist Training</span></div>
+          <div><strong>DNB</strong><span>Pulmonary Medicine</span></div>
         </div>
         <div class="cred-pill">
           <span class="ico"><i class="fa-solid fa-bed-pulse"></i></span>
@@ -468,65 +546,10 @@
           </a>
         </div>
       </div>
-      <div class="cta-visual">
-        <img src="img/cta-home.jpg" alt="Schedule a consultation at Healthy Chest & Sleep Clinic">
-        <span class="badge-live"><span class="pulse"></span> Accepting new patients · Same-week slots</span>
-      </div>
     </div>
   </div>
 </section>
 
-<!-- ============== FAQ ============== -->
-<section class="section section-soft">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow"><span class="dot"></span> Frequently asked</span>
-      <h2>Answers to the questions we hear most.</h2>
-    </div>
-
-    <div class="faq-list">
-      <div class="faq-item reveal">
-        <button class="faq-q">
-          <span>Do I need a referral to see Dr. Sharma?</span>
-          <span class="plus" aria-hidden="true"></span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">No referral is needed — you can book a consultation directly with our clinic. If you have prior reports or imaging, please bring them along so we can review your history together.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q">
-          <span>What should I bring to my first appointment?</span>
-          <span class="plus" aria-hidden="true"></span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Any prior prescriptions, inhalers, lung-function reports, sleep test reports, blood tests and imaging (X-ray, HRCT) — physical or digital. A list of current medications is also helpful.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q">
-          <span>Is a sleep study performed at the clinic?</span>
-          <span class="plus" aria-hidden="true"></span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">Yes — we offer both supervised in-clinic polysomnography and home sleep tests, with full reporting and CPAP titration where needed.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q">
-          <span>How long is a typical consultation?</span>
-          <span class="plus" aria-hidden="true"></span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">First consultations are scheduled for 30 minutes to allow a thorough history, examination and discussion of next steps. Follow-ups are typically 15–20 minutes.</div></div>
-      </div>
-
-      <div class="faq-item reveal">
-        <button class="faq-q">
-          <span>Do you accept insurance?</span>
-          <span class="plus" aria-hidden="true"></span>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">We can provide detailed invoices and reports for reimbursement claims with most major insurers. For panel/cashless arrangements, please call ahead so we can guide you.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ============== FOOTER ============== -->
 <footer class="site-footer">

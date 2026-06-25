@@ -52,6 +52,16 @@
       if(e.key === 'Escape') closeDrawer();
     });
 
+    // -------- Drawer Services accordion
+    var accToggle = document.querySelector('.drawer-acc-toggle');
+    if(accToggle){
+      accToggle.addEventListener('click', function(){
+        var acc = accToggle.closest('.drawer-acc');
+        var open = acc.classList.toggle('open');
+        accToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+
     // -------- Smooth scroll for in-page anchors
     document.querySelectorAll('a[href^="#"]').forEach(function(a){
       a.addEventListener('click', function(e){
