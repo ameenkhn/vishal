@@ -76,7 +76,9 @@
       "Bash(git fetch *)",
       "Bash(git rev-list *)",
       "Bash(curl -s \"https://shaltemp.netlify.app/assets/css/app.css\")",
-      "Bash(curl -s \"https://shaltemp.netlify.app/\")"
+      "Bash(curl -s \"https://shaltemp.netlify.app/\")",
+      "Bash(curl -s \"https://shaltemp.netlify.app/assets/css/app.css?x=$\\(date +%s\\)\")",
+      "Bash(curl -sI \"https://shaltemp.netlify.app/assets/css/app.css\")"
     ]
   }
 }
