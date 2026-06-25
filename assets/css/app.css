@@ -500,7 +500,13 @@ p{ color:var(--text-600); }
   .hero .eyebrow{ display:none; }
   /* tighten the mobile first-look so the doctor sits closer and reads larger */
   .hero{ padding-block: clamp(32px,7vw,56px) clamp(44px,7vw,80px); }
-  .hero-visual{ max-width:440px; aspect-ratio:4/5; }
+  /* Don't drive height from aspect-ratio on mobile — the percentage-height
+     chain (.doctor height:100% → img max-height:100%) can collapse to zero on
+     some mobile browsers, hiding the photo. Size from the image's own aspect. */
+  .hero-visual{ max-width:340px; aspect-ratio:auto; }
+  .hero-visual .doctor{ height:auto; display:block; }
+  .hero-visual .doctor img{ width:100%; height:auto; max-height:none; display:block; }
+  .hero-visual .blob{ inset:8% 0 0 4%; }
   .hero-copy .lede{ margin-bottom:0; margin-inline:auto; }
   .hero-trust{ margin-bottom:1.4rem; }
 }
@@ -1325,14 +1331,14 @@ p{ color:var(--text-600); }
 }
 .preloader .pre-logo{
   position:relative; z-index:1; display:block;
-  width:min(300px, 66vw); height:auto;
+  width:min(120px, 32vw); height:auto;
   animation:pre-breathe 2.6s var(--ease) infinite;
 }
 @keyframes pre-breathe{
   0%,100%{ transform:scale(.96); opacity:.9; }
   50%{ transform:scale(1.04); opacity:1; }
 }
-.preloader .label{ font-family:var(--font-display); font-weight:700; color:var(--ink-900); letter-spacing:.04em; text-align:center; }
+.preloader .label{ font-family:var(--font-display); font-weight:700; color:var(--ink-900); letter-spacing:.04em; text-align:center; font-size:1.15rem; }
 .preloader .label small{ display:block; font-weight:500; color:var(--text-500); font-size:.8rem; letter-spacing:.08em; text-transform:uppercase; }
 
 /* ───────────────────── Reveal animations ───────────────────── */

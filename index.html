@@ -23,9 +23,23 @@
 <!-- ============== PRELOADER ============== -->
 <div class="preloader" aria-hidden="true">
   <div class="pulse-wrap">
-    <img src="img/logo-removebg-preview (1).png" alt="Healthy Chest &amp; Sleep Clinic" class="pre-logo">
+    <svg class="pre-logo" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Healthy Chest &amp; Sleep Clinic">
+      <defs>
+        <linearGradient id="preLungGrad" x1="20" y1="14" x2="100" y2="104" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#3B82F6"/>
+          <stop offset="1" stop-color="#1E40AF"/>
+        </linearGradient>
+      </defs>
+      <!-- trachea + bronchi -->
+      <path d="M60 14 V34" stroke="url(#preLungGrad)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M60 30 C57 34 55 37 53 40 M60 30 C63 34 65 37 67 40" stroke="url(#preLungGrad)" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <!-- left lung -->
+      <path d="M54 40 C54 40 41 44 34 57 C28 67 25 81 29 93 C31 100 39 103 45 99 C50 96 54 89 54 80 Z" fill="url(#preLungGrad)"/>
+      <!-- right lung -->
+      <path d="M66 40 C66 40 79 44 86 57 C92 67 95 81 91 93 C89 100 81 103 75 99 C70 96 66 89 66 80 Z" fill="url(#preLungGrad)"/>
+    </svg>
   </div>
-  <div class="label"><small>Breathe Easier · Sleep Better</small></div>
+  <div class="label">Healthy Chest &amp; Sleep Clinic<small>Breathe Easier · Sleep Better</small></div>
 </div>
 <!-- ============== HEADER / NAV ============== -->
 <header class="site-header">
